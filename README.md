@@ -10,7 +10,7 @@ Step 3: Add liquibase to path for that
         Open the ~/.bashrc file
 
 Step 4: Export a Path to install the liquibase
-Add the following command: "export PATH="$PATH:<path to liquibase installation>"
+Add the following command: "export PATH="$PATH:<path/to/liquibase/installation>"
 
 Step 5: Save and Close the .bashrc file
         source ~/.bashrc
@@ -26,13 +26,18 @@ Download JDBC Driver : https://jdbc.postgresql.org/download/
 # Codeing Part to configure the liquibase to Database
 
 Firslty create a Database from Terminal
+
 Step1:  sudo -u postgres psql
+
 Step2: create database 
         command: "database_name"
 
-Let's write a Code to generate postgres database, create a folder and in it create a liquibase.properties file.
+Let's write a Code to generate postgres database, create a folder DB and create a liquibase.properties file in DB folder.
 
 Write a Code by following content which is attached on my git repository.
 
-Then create a dbChangelog.xmll file in which we are going to define our table 
+Then create a dbChangelog.xml file in DB folder in which we are going to define our table.
 
+Command to "DB" and run command: liquibase update
+
+Now you can see the Database configuration.
